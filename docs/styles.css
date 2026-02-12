@@ -1,0 +1,105 @@
+﻿:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #22c55e;
+  --accent-text: #052e16;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(circle at top, #1f2937, var(--bg));
+  color: var(--text);
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 20px;
+}
+
+.card {
+  background: rgba(17, 24, 39, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 28px;
+  backdrop-filter: blur(4px);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+}
+
+p {
+  margin: 0 0 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+strong {
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--text);
+}
+
+.button.primary {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: transparent;
+}
+
+.small {
+  margin-top: 18px;
+  font-size: 0.9rem;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+nav a:hover,
+.button:hover {
+  opacity: 0.9;
+}
+
+ul {
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+li {
+  margin-bottom: 8px;
+}
